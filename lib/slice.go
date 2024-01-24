@@ -2,7 +2,7 @@ package lib
 
 import "fmt"
 
-func SLice() {
+func Slice() {
 	langs := []string{"golang", "python", "java"}
 	fmt.Printf("langs: %#v\n", langs)
 
