@@ -1,8 +1,9 @@
 package main
 
 import (
-	"KBTG_Reskill/lib"
 	"fmt"
+
+	"github.com/Kidcatmeow/goFundamentals/lib"
 )
 
 func main() {

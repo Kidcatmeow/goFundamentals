@@ -1,3 +1,3 @@
-module KBTG_Reskill
+module github.com/Kidcatmeow/goFundamentals
 
 go 1.21.4
