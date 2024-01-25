@@ -1,8 +1,8 @@
-package lib
+package main
 
 import "fmt"
 
-func Slice() {
+func main() {
 	langs := []string{"golang", "python", "java"}
 	fmt.Printf("langs: %#v\n", langs)
 
@@ -23,6 +23,10 @@ func Slice() {
 	//to add more values into the slice
 	langs = append(langs, "Fa", "Em")
 	fmt.Printf("langs: %#v\n", langs)
+
+	//to remove element from slice
+	removeIndex := RemoveIndex(langs, 1)
+	fmt.Printf("langs remove index: %#v\n", removeIndex)
 
 	//Slicing , we can get certain value to certain value from the slice
 	a := langs[0:2] // get value in slice from index 0-1
@@ -69,4 +73,9 @@ func Slice() {
 
 func printSlice(ns []string) {
 	fmt.Printf("printSlice: ns: %#v\n", ns)
+}
+
+// to remove value from the slice
+func RemoveIndex(s []string, index int) []string {
+	return append(s[:index], s[index+1:]...)
 }
