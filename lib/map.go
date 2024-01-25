@@ -1,8 +1,8 @@
-package main
+package lib
 
 import "fmt"
 
-func main() {
+func Map() {
 
 	//map contain key and value
 	//initialize map with keys: value
